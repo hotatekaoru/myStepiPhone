@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D1699841D9AB49500FD38F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D1699831D9AB49500FD38F9 /* Assets.xcassets */; };
+		4D1699911D9AB68000FD38F9 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D16998E1D9AB68000FD38F9 /* Realm.framework */; };
+		4D1699921D9AB68000FD38F9 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D16998F1D9AB68000FD38F9 /* RealmSwift.framework */; };
+		4D1699931D9AB68000FD38F9 /* TextFieldEffects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1699901D9AB68000FD38F9 /* TextFieldEffects.framework */; };
+		4D16999B1D9AB72800FD38F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D16999A1D9AB72800FD38F9 /* AppDelegate.swift */; };
+		4D16999D1D9AB73800FD38F9 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D16999C1D9AB73800FD38F9 /* TitleViewController.swift */; };
+		4D16999F1D9ABC7200FD38F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D16999E1D9ABC7200FD38F9 /* LoginView.swift */; };
+		4D1699A31D9ABD2B00FD38F9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1699A21D9ABD2B00FD38F9 /* LoginViewController.swift */; };
+		4D1699A51D9AC8CB00FD38F9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D1699A41D9AC8CB00FD38F9 /* Default-568h@2x.png */; };
+		4DD8BE4A8DD11AFF17C4CD3C /* Pods_myStepiPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DA18CF45CD7C3D5D6293BA /* Pods_myStepiPhone.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24B787BFFD82C27A70D5E966 /* Pods-myStepiPhone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myStepiPhone.release.xcconfig"; path = "Pods/Target Support Files/Pods-myStepiPhone/Pods-myStepiPhone.release.xcconfig"; sourceTree = "<group>"; };
+		4D1699791D9AB49500FD38F9 /* myStepiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myStepiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1699831D9AB49500FD38F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D1699881D9AB49500FD38F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D16998E1D9AB68000FD38F9 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../../Library/Developer/Xcode/DerivedData/myStepiPhone-hfimikhrjdencveyksjwrpgrchws/Build/Products/Debug-iphonesimulator/Realm/Realm.framework"; sourceTree = "<group>"; };
+		4D16998F1D9AB68000FD38F9 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../../Library/Developer/Xcode/DerivedData/myStepiPhone-hfimikhrjdencveyksjwrpgrchws/Build/Products/Debug-iphonesimulator/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
+		4D1699901D9AB68000FD38F9 /* TextFieldEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextFieldEffects.framework; path = "../../../../Library/Developer/Xcode/DerivedData/myStepiPhone-hfimikhrjdencveyksjwrpgrchws/Build/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework"; sourceTree = "<group>"; };
+		4D16999A1D9AB72800FD38F9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = myStepiPhone/src/AppDelegate.swift; sourceTree = "<group>"; };
+		4D16999C1D9AB73800FD38F9 /* TitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleViewController.swift; path = src/controller/TitleViewController.swift; sourceTree = "<group>"; };
+		4D16999E1D9ABC7200FD38F9 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = src/view/login/LoginView.swift; sourceTree = "<group>"; };
+		4D1699A21D9ABD2B00FD38F9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = src/controller/LoginViewController.swift; sourceTree = "<group>"; };
+		4D1699A41D9AC8CB00FD38F9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		F3DA18CF45CD7C3D5D6293BA /* Pods_myStepiPhone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myStepiPhone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBCE6C96331DB9F7E602425 /* Pods-myStepiPhone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myStepiPhone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-myStepiPhone/Pods-myStepiPhone.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D1699761D9AB49500FD38F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1699911D9AB68000FD38F9 /* Realm.framework in Frameworks */,
+				4D1699921D9AB68000FD38F9 /* RealmSwift.framework in Frameworks */,
+				4D1699931D9AB68000FD38F9 /* TextFieldEffects.framework in Frameworks */,
+				4DD8BE4A8DD11AFF17C4CD3C /* Pods_myStepiPhone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		109AB0A2B33BCF9F312D7BAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBBCE6C96331DB9F7E602425 /* Pods-myStepiPhone.debug.xcconfig */,
+				24B787BFFD82C27A70D5E966 /* Pods-myStepiPhone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2A3D7D4DAC312171BEB935C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D16998E1D9AB68000FD38F9 /* Realm.framework */,
+				4D16998F1D9AB68000FD38F9 /* RealmSwift.framework */,
+				4D1699901D9AB68000FD38F9 /* TextFieldEffects.framework */,
+				F3DA18CF45CD7C3D5D6293BA /* Pods_myStepiPhone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D1699701D9AB49500FD38F9 = {
+			isa = PBXGroup;
+			children = (
+				4D16997B1D9AB49500FD38F9 /* myStepiPhone */,
+				4D16999A1D9AB72800FD38F9 /* AppDelegate.swift */,
+				4D16997A1D9AB49500FD38F9 /* Products */,
+				109AB0A2B33BCF9F312D7BAB /* Pods */,
+				2A3D7D4DAC312171BEB935C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D16997A1D9AB49500FD38F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D1699791D9AB49500FD38F9 /* myStepiPhone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D16997B1D9AB49500FD38F9 /* myStepiPhone */ = {
+			isa = PBXGroup;
+			children = (
+				4D1699951D9AB6A100FD38F9 /* resources */,
+				4D1699941D9AB69000FD38F9 /* src */,
+			);
+			path = myStepiPhone;
+			sourceTree = "<group>";
+		};
+		4D1699941D9AB69000FD38F9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4D1699961D9AB6CE00FD38F9 /* controller */,
+				4D1699971D9AB6D700FD38F9 /* model */,
+				4D1699981D9AB6EB00FD38F9 /* view */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		4D1699951D9AB6A100FD38F9 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D1699A41D9AC8CB00FD38F9 /* Default-568h@2x.png */,
+				4D1699831D9AB49500FD38F9 /* Assets.xcassets */,
+				4D1699881D9AB49500FD38F9 /* Info.plist */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		4D1699961D9AB6CE00FD38F9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D16999C1D9AB73800FD38F9 /* TitleViewController.swift */,
+				4D1699A21D9ABD2B00FD38F9 /* LoginViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		4D1699971D9AB6D700FD38F9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		4D1699981D9AB6EB00FD38F9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				4D1699991D9AB6FA00FD38F9 /* login */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		4D1699991D9AB6FA00FD38F9 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				4D16999E1D9ABC7200FD38F9 /* LoginView.swift */,
+			);
+			name = login;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D1699781D9AB49500FD38F9 /* myStepiPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D16998B1D9AB49500FD38F9 /* Build configuration list for PBXNativeTarget "myStepiPhone" */;
+			buildPhases = (
+				B4EBF711ABDF907101BD70D7 /* 📦 Check Pods Manifest.lock */,
+				4D1699751D9AB49500FD38F9 /* Sources */,
+				4D1699761D9AB49500FD38F9 /* Frameworks */,
+				4D1699771D9AB49500FD38F9 /* Resources */,
+				637BAF772DB9AD67B042ACAA /* 📦 Embed Pods Frameworks */,
+				F00F402A5A3B6DF8E395772D /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myStepiPhone;
+			productName = myStepiPhone;
+			productReference = 4D1699791D9AB49500FD38F9 /* myStepiPhone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D1699711D9AB49500FD38F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Kaoru Hotate";
+				TargetAttributes = {
+					4D1699781D9AB49500FD38F9 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = T7GLZXG279;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4D1699741D9AB49500FD38F9 /* Build configuration list for PBXProject "myStepiPhone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D1699701D9AB49500FD38F9;
+			productRefGroup = 4D16997A1D9AB49500FD38F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D1699781D9AB49500FD38F9 /* myStepiPhone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D1699771D9AB49500FD38F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1699841D9AB49500FD38F9 /* Assets.xcassets in Resources */,
+				4D1699A51D9AC8CB00FD38F9 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		637BAF772DB9AD67B042ACAA /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myStepiPhone/Pods-myStepiPhone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4EBF711ABDF907101BD70D7 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F00F402A5A3B6DF8E395772D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-myStepiPhone/Pods-myStepiPhone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D1699751D9AB49500FD38F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D1699A31D9ABD2B00FD38F9 /* LoginViewController.swift in Sources */,
+				4D16999F1D9ABC7200FD38F9 /* LoginView.swift in Sources */,
+				4D16999D1D9AB73800FD38F9 /* TitleViewController.swift in Sources */,
+				4D16999B1D9AB72800FD38F9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4D1699891D9AB49500FD38F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4D16998A1D9AB49500FD38F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D16998C1D9AB49500FD38F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBBCE6C96331DB9F7E602425 /* Pods-myStepiPhone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T7GLZXG279;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
+				INFOPLIST_FILE = myStepiPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hotate.myStepiPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Debug;
+		};
+		4D16998D1D9AB49500FD38F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B787BFFD82C27A70D5E966 /* Pods-myStepiPhone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T7GLZXG279;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
+				INFOPLIST_FILE = myStepiPhone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hotate.myStepiPhone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D1699741D9AB49500FD38F9 /* Build configuration list for PBXProject "myStepiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1699891D9AB49500FD38F9 /* Debug */,
+				4D16998A1D9AB49500FD38F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D16998B1D9AB49500FD38F9 /* Build configuration list for PBXNativeTarget "myStepiPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D16998C1D9AB49500FD38F9 /* Debug */,
+				4D16998D1D9AB49500FD38F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D1699711D9AB49500FD38F9 /* Project object */;
+}
