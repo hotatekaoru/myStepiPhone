@@ -49,8 +49,8 @@ class LoginView: UIView {
 		func setupConstraints() {
 			userNameLabel.autoSetDimension(ALDimension.Height, toSize: 20)
 			userNameLabel.autoSetDimension(ALDimension.Width, toSize: 120)
-			userNameLabel.autoPinEdgeToSuperviewEdge(ALEdge.Top, withInset: 10)
-			userNameLabel.autoPinEdgeToSuperviewEdge(ALEdge.Left, withInset: 10)
+			userNameLabel.autoPinEdgeToSuperviewEdge(ALEdge.Top, withInset: 100)
+			userNameLabel.autoPinEdgeToSuperviewEdge(ALEdge.Left, withInset: 100)
 		}
 		
 		if !didSetupConstraints {
