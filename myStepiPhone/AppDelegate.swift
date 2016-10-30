@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  myStepiPhone
 //
-//  Created by 保立馨 on 2016/09/27.
+//  Created by 保立馨 on 2016/10/22.
 //  Copyright © 2016年 Kaoru Hotate. All rights reserved.
 //
 
@@ -12,15 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	var window: UIWindow?
-	var nc: UINavigationController?
+	
 	
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-		let titleVC: TitleViewController = TitleViewController()
-		nc = UINavigationController(rootViewController: titleVC)
-		self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
-		self.window?.rootViewController = nc
-		self.window?.makeKeyAndVisible()
-		
+		// Override point for customization after application launch.
 		return true
 	}
 	
