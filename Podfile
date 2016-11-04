@@ -9,4 +9,7 @@ target 'myStepiPhone' do
   pod 'RxSwift',    '~> 2.0'
   pod 'RxCocoa',    '~> 2.0'
   pod 'ngrvalidator', '~> 1.3.0'
+  pod 'Alamofire', '~> 3.5.1'
+  pod "Himotoki", "~> 2.1.1"
+  pod 'SwiftyJSON', '~> 2.4.0'
 end

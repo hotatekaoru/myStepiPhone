@@ -9,6 +9,8 @@
 import Foundation
 import Bond
 import NGRValidator
+import Alamofire
+import SwiftyJSON
 
 let MIN_LENGTH_USERNAME = 4;
 let MIN_LENGTH_PASSWORD = 4;
@@ -27,6 +29,7 @@ class LoginViewModel {
 	let password = Observable<String?>("")
 	let errorMsg = Observable<String?>("")
 	let isEnableSignIn = Observable<Bool>(false)
+	var resp:UserResp?
 	
 	// 通信中インディケーターのアニメーションの有無を制御するフラグ
 	// Requesting状態の時だけTrueになる。
@@ -77,8 +80,12 @@ class LoginViewModel {
 		
 	}
 	
-	func signUp() {
-		
+	func signIn (username: String, password: String) -> (result: Bool, errMsg: String) {
+
+		if !isExistUser(username, password: password) {
+			return (false, "")
+		}
+
 		requestState.next(.Requesting)
 		let delay = 1.0 * Double(NSEC_PER_SEC)
 		let time  = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
@@ -86,8 +93,30 @@ class LoginViewModel {
 		dispatch_after(time, dispatch_get_main_queue()) { [unowned self] in
 			self.requestState.next(.Finish)
 		}
-		
+				
+		return (true, "")
 	}
-
+	
+	func isExistUser(username: String, password: String) -> Bool {
+		
+		let req = UserReq(userName: username, password: password)
+		var exist = false
+		
+		Alamofire.request(.POST, req.urlString, parameters: req.parameters).responseJSON { response in
+			switch response.result {
+			case .Success:
+				if let value = response.result.value {
+					self.resp = UserResp(json:JSON(value))
+					exist = true
+					print("Alamofire成功")
+					print(self.resp?.userId)
+				}
+			case .Failure(let error):
+				print(error)
+			}
+		}
+		
+		return exist
+	}
 
 }
