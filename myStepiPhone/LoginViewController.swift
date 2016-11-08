@@ -38,10 +38,11 @@ class LoginViewController: UIViewController {
 		loginVM.username.bidirectionalBindTo(nameTextField.bnd_text)
 		loginVM.password.bidirectionalBindTo(passwordTextField.bnd_text)
 
-		loginVM.signUpViewStateInfo.observe { [weak self] (buttonEnabled, buttonAlpha, errorMsg) -> Void in
+		// 各InputItemの状態に応じた挙動を定義
+		loginVM.signUpViewStateInfo.observe { [weak self] (buttonEnabled, errorMsg) -> Void in
 			self?.errorMsg.text = errorMsg
 			self?.signInBtn.enabled = buttonEnabled
-			self?.signInBtn.alpha = buttonAlpha
+			self?.signInBtn.alpha = buttonEnabled ? 1.0 : 0.5
 
 			if self?.errorMsg.text != "" {
 				self?.errorMsgArea.backgroundColor = UIColor.magentaColor()
@@ -54,15 +55,11 @@ class LoginViewController: UIViewController {
 		loginVM.isLoadingViewHidden.bindTo(loadingIndicator.bnd_hidden)
 		loginVM.isLoadingViewAnimate.bindTo(loadingIndicator.bnd_animating)
 		
+		// signInボタン押下時の処理を定義
 		signInBtn.bnd_controlEvent.filter { $0 == .TouchUpInside }.observe { [weak self] _ -> Void in
+
 			self?.loginVM.signIn(self!.nameTextField.text!, password: self!.passwordTextField.text!)
-		}
-		
-		loginVM.finishSignUp.ignoreNil().observe { [weak self] (username, password) -> Void in
-			let alertController = UIAlertController(title: "メッセージ", message: "username:\(username)\npassword:\(password)", preferredStyle: .Alert)
-			let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
-			alertController.addAction(action)
-			self?.navigationController?.presentViewController(alertController, animated: true, completion: nil)
+
 		}
 		
 	}

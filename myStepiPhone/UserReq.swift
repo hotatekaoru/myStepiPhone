@@ -9,7 +9,7 @@
 import Foundation
 
 class UserReq {
-	let urlString = "http://52.68.55.108/JSON/login"
+	let urlString = "http://52.68.55.108/api/v1/login"
 	let parameters: [String: String]
 	
 	init(userName: String, password: String) {

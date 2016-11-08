@@ -6,14 +6,24 @@
 //  Copyright © 2016年 Kaoru Hotate. All rights reserved.
 //
 
+
 import SwiftyJSON
 
 struct UserResp {
 	
+	let err: String?
 	let userId: Int?
 	
-	init(json: JSON) {
-		self.userId = json["id"].int
+	init?(json: JSON) {
+		guard let
+			err = json["err"].string,
+			userId = json["id"].int
+		else {
+			return nil
+		}
+
+		self.err = err
+		self.userId = userId
 	}
 	
 }

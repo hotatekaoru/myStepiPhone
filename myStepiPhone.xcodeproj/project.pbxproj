@@ -13,11 +13,14 @@
 		4D0DB8E01DBCAD81001686F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DB8DF1DBCAD81001686F3 /* User.swift */; };
 		4D0DB8E21DBF9A3E001686F3 /* NGRValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D0DB8E11DBF9A3E001686F3 /* NGRValidator.framework */; };
 		4D0DB8E51DC5B07E001686F3 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DB8E41DC5B07E001686F3 /* Const.swift */; };
+		4D24B9021DCF16ED00E58D3A /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24B9011DCF16ED00E58D3A /* DashBoardViewController.swift */; };
+		4D24B9041DCF3E3B00E58D3A /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D24B9031DCF3E3B00E58D3A /* RxAlamofire.framework */; };
+		4D24B9061DCF44E500E58D3A /* GetLoginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D24B9051DCF44E500E58D3A /* GetLoginInfo.swift */; };
 		4D6274211DCADF2A0018476C /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6274201DCADF2A0018476C /* LeftMenuViewController.swift */; };
 		4D6274251DCAE5F20018476C /* LeftMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6274241DCAE5F20018476C /* LeftMenuTableViewCell.swift */; };
 		4D6274271DCAE61C0018476C /* LeftMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D6274261DCAE61C0018476C /* LeftMenuTableViewCell.xib */; };
 		4D62742A1DCB5B5F0018476C /* ColorConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6274291DCB5B5F0018476C /* ColorConverter.swift */; };
-		4D62742C1DCB5CDC0018476C /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62742B1DCB5CDC0018476C /* DashBoardViewController.swift */; };
+		4D62742C1DCB5CDC0018476C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D62742B1DCB5CDC0018476C /* ViewController.swift */; };
 		4D73EB281DBB768600A01265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D73EB271DBB768600A01265 /* AppDelegate.swift */; };
 		4D73EB2A1DBB768600A01265 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D73EB291DBB768600A01265 /* LoginViewController.swift */; };
 		4D73EB2D1DBB768600A01265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D73EB2B1DBB768600A01265 /* Main.storyboard */; };
@@ -42,11 +45,14 @@
 		4D0DB8DF1DBCAD81001686F3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4D0DB8E11DBF9A3E001686F3 /* NGRValidator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NGRValidator.framework; path = "Pods/../build/Debug-iphoneos/ngrvalidator/NGRValidator.framework"; sourceTree = "<group>"; };
 		4D0DB8E41DC5B07E001686F3 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		4D24B9011DCF16ED00E58D3A /* DashBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		4D24B9031DCF3E3B00E58D3A /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAlamofire.framework; path = "Pods/../build/Debug-iphoneos/RxAlamofire/RxAlamofire.framework"; sourceTree = "<group>"; };
+		4D24B9051DCF44E500E58D3A /* GetLoginInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLoginInfo.swift; sourceTree = "<group>"; };
 		4D6274201DCADF2A0018476C /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		4D6274241DCAE5F20018476C /* LeftMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewCell.swift; sourceTree = "<group>"; };
 		4D6274261DCAE61C0018476C /* LeftMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMenuTableViewCell.xib; sourceTree = "<group>"; };
 		4D6274291DCB5B5F0018476C /* ColorConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConverter.swift; sourceTree = "<group>"; };
-		4D62742B1DCB5CDC0018476C /* DashBoardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		4D62742B1DCB5CDC0018476C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4D73EB241DBB768600A01265 /* myStepiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myStepiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D73EB271DBB768600A01265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D73EB291DBB768600A01265 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D24B9041DCF3E3B00E58D3A /* RxAlamofire.framework in Frameworks */,
 				4DB861D31DC5BCC100E8932A /* Alamofire.framework in Frameworks */,
 				4DB861D41DC5BCC100E8932A /* SwiftyJSON.framework in Frameworks */,
 				4D0DB8E21DBF9A3E001686F3 /* NGRValidator.framework in Frameworks */,
@@ -138,13 +145,13 @@
 		4D73EB261DBB768600A01265 /* myStepiPhone */ = {
 			isa = PBXGroup;
 			children = (
-				4D6274281DCB5B3D0018476C /* Util */,
-				4D0DB8E31DC5B06E001686F3 /* Const */,
 				4D73EB271DBB768600A01265 /* AppDelegate.swift */,
 				4D73EB3D1DBB77A300A01265 /* View */,
 				4D73EB3A1DBB773B00A01265 /* ViewController */,
 				4D73EB3E1DBB77B000A01265 /* ViewModel */,
 				4D73EB3B1DBB776400A01265 /* Model */,
+				4D0DB8E31DC5B06E001686F3 /* Const */,
+				4D6274281DCB5B3D0018476C /* Util */,
 				4D73EB3C1DBB777200A01265 /* Resource */,
 			);
 			path = myStepiPhone;
@@ -162,9 +169,10 @@
 		4D73EB3A1DBB773B00A01265 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				4D62742B1DCB5CDC0018476C /* DashBoardViewController.swift */,
-				4D6274201DCADF2A0018476C /* LeftMenuViewController.swift */,
 				4D73EB291DBB768600A01265 /* LoginViewController.swift */,
+				4D62742B1DCB5CDC0018476C /* ViewController.swift */,
+				4D6274201DCADF2A0018476C /* LeftMenuViewController.swift */,
+				4D24B9011DCF16ED00E58D3A /* DashBoardViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -174,7 +182,6 @@
 			children = (
 				4DB861D61DC5BF7300E8932A /* API */,
 				4DB861D51DC5BF6C00E8932A /* DB */,
-				4D0DB8DF1DBCAD81001686F3 /* User.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -208,6 +215,7 @@
 		4DB861D51DC5BF6C00E8932A /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				4D0DB8DF1DBCAD81001686F3 /* User.swift */,
 			);
 			name = DB;
 			sourceTree = "<group>";
@@ -215,6 +223,7 @@
 		4DB861D61DC5BF7300E8932A /* API */ = {
 			isa = PBXGroup;
 			children = (
+				4D24B9051DCF44E500E58D3A /* GetLoginInfo.swift */,
 				4DB861D71DC5BF7A00E8932A /* Request */,
 				4DB861D81DC5BFB800E8932A /* Response */,
 			);
@@ -240,6 +249,7 @@
 		6CF4A7B1205F1767CD6B8BA5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D24B9031DCF3E3B00E58D3A /* RxAlamofire.framework */,
 				4DB861D11DC5BCC100E8932A /* Alamofire.framework */,
 				4DB861D21DC5BCC100E8932A /* SwiftyJSON.framework */,
 				4D0DB8E11DBF9A3E001686F3 /* NGRValidator.framework */,
@@ -388,12 +398,14 @@
 				4DB861FA1DC5C22F00E8932A /* UserReq.swift in Sources */,
 				4D0DB8E01DBCAD81001686F3 /* User.swift in Sources */,
 				4D62742A1DCB5B5F0018476C /* ColorConverter.swift in Sources */,
+				4D24B9061DCF44E500E58D3A /* GetLoginInfo.swift in Sources */,
+				4D24B9021DCF16ED00E58D3A /* DashBoardViewController.swift in Sources */,
 				4D73EB2A1DBB768600A01265 /* LoginViewController.swift in Sources */,
 				4DB861F81DC5C04600E8932A /* UserResp.swift in Sources */,
 				4D73EB281DBB768600A01265 /* AppDelegate.swift in Sources */,
 				4D0DB8DE1DBCACE9001686F3 /* LoginViewModel.swift in Sources */,
 				4D6274211DCADF2A0018476C /* LeftMenuViewController.swift in Sources */,
-				4D62742C1DCB5CDC0018476C /* DashBoardViewController.swift in Sources */,
+				4D62742C1DCB5CDC0018476C /* ViewController.swift in Sources */,
 				4D0DB8E51DC5B07E001686F3 /* Const.swift in Sources */,
 				4D6274251DCAE5F20018476C /* LeftMenuTableViewCell.swift in Sources */,
 			);
@@ -509,7 +521,10 @@
 			baseConfigurationReference = 2F52EAE8020F70AF039228D5 /* Pods-myStepiPhone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RxAlamofire",
+				);
 				INFOPLIST_FILE = myStepiPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hotate.myStepiPhone;
@@ -530,6 +545,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ngrvalidator",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/SwiftyJSON",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/RxAlamofire",
 				);
 				INFOPLIST_FILE = myStepiPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

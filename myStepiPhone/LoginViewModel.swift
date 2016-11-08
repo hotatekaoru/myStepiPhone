@@ -17,12 +17,17 @@ let MIN_LENGTH_PASSWORD = 4;
 
 class LoginViewModel {
 	
+	enum APIError: ErrorType {
+		case CannotParse
+	}
+
 	// 通信状態を表す
 	enum RequestState {
 		case None		// 未通信
 		case Requesting	// 通信中
 		case Finish		// 通信完了
-}
+		case Error		// 通信エラー
+	}
 	
 	let requestState = Observable<RequestState>(.None)
 	let username = Observable<String?>("")
@@ -30,6 +35,7 @@ class LoginViewModel {
 	let errorMsg = Observable<String?>("")
 	let isEnableSignIn = Observable<Bool>(false)
 	var resp:UserResp?
+	var err = ""
 	
 	// 通信中インディケーターのアニメーションの有無を制御するフラグ
 	// Requesting状態の時だけTrueになる。
@@ -41,82 +47,66 @@ class LoginViewModel {
 		return requestState.map { $0 != .Requesting }
 	}
 	
-	var signUpViewStateInfo: EventProducer<(buttonEnabled: Bool, buttonAlpha: CGFloat, errorMsg: String)> {
+	var signUpViewStateInfo: EventProducer<(buttonEnabled: Bool, errorMsg: String)> {
 		
 		return combineLatest(requestState, username, password).map { (requestState, username, password) in
 			
 			guard let username = username, password = password where requestState != .Requesting else {
-				return (false, 0.5, "")
+				return (false, "")
+			}
+			
+			if !self.err.isEmpty {
+				return (true, self.err)
 			}
 			
 			if username.isEmpty || password.isEmpty  {
-				return (false, 0.5, "")
+				return (false, "")
 			}
 			
 			if username.characters.count < MIN_LENGTH_USERNAME {
-				return (false, 0.5, "Nameは4文字以上入力してください。")
+				return (false, "Nameは4文字以上入力してください。")
 			}
 			
 			if password.characters.count < MIN_LENGTH_PASSWORD {
-				return (false, 0.5, "Passwordは4文字以上入力してください。")
+				return (false, "Passwordは4文字以上入力してください。")
 			}
 			
-			return (true, 1.0, "")
+			return (true, "")
 			
 		}
 	}
 	
-	var finishSignUp: EventProducer<(username: String, password: String)?> {
-		
-		return requestState.map { [weak self] requestState in
-			
-			guard let username = self?.username.value, password = self?.password.value where requestState == .Finish else {
-				return nil
-			}
-			
-			return (username, password)
-			
-		}
-		
+	var getErrMsg: EventProducer<String> {
+		return errorMsg.map { $0! }
 	}
-	
-	func signIn (username: String, password: String) -> (result: Bool, errMsg: String) {
 
-		if !isExistUser(username, password: password) {
-			return (false, "")
-		}
-
-		requestState.next(.Requesting)
-		let delay = 1.0 * Double(NSEC_PER_SEC)
-		let time  = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+	func signIn(username: String, password: String) {
 		
-		dispatch_after(time, dispatch_get_main_queue()) { [unowned self] in
-			self.requestState.next(.Finish)
-		}
-				
-		return (true, "")
+		self.getUserInfo(username, password: password)
 	}
 	
-	func isExistUser(username: String, password: String) -> Bool {
+	func getUserInfo(username: String, password: String) {
 		
 		let req = UserReq(userName: username, password: password)
-		var exist = false
-		
+
 		Alamofire.request(.POST, req.urlString, parameters: req.parameters).responseJSON { response in
 			switch response.result {
 			case .Success:
+				
 				if let value = response.result.value {
 					self.resp = UserResp(json:JSON(value))
-					exist = true
-					print("Alamofire成功")
-					print(self.resp?.userId)
+					self.err = self.resp!.err!
 				}
+				self.requestState.next(.Finish)
+				
 			case .Failure(let error):
 				print(error)
+				self.requestState.next(.Error)
+				self.err = "Connection Error"
+
 			}
 		}
 		
-		return exist
 	}
-
+	
 }
